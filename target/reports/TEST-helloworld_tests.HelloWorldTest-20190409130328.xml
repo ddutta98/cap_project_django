@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" file="helloworld_tests.py" name="helloworld_tests.HelloWorldTest-20190409130328" skipped="0" tests="1" time="0.001" timestamp="2019-04-09T13:03:28">
+	<testcase classname="helloworld_tests.HelloWorldTest" file="src\unittest\python\helloworld_tests.py" line="8" name="test_should_issue_hello_world_message" time="0.001" timestamp="2019-04-09T13:03:28">
+		<failure message="
+Wanted but not invoked:  write('Hello world of Python\n')
+Instead got:             [write('Hello World')]" type="VerificationError">
+<![CDATA[Traceback (most recent call last):
+  File "e:\capstone project\pybuilder\src\unittest\python\helloworld_tests.py", line 13, in test_should_issue_hello_world_message
+    verify(out).write("Hello world of Python\n")
+  File "c:\anaconda3\envs\pybuilder\lib\site-packages\mockito\invocation.py", line 225, in __call__
+    self.verification.verify(self, len(matched_invocations))
+  File "c:\anaconda3\envs\pybuilder\lib\site-packages\mockito\verification.py", line 83, in verify
+    str(list(reversed(invocation.mock.invocations)))))
+VerificationError: 
+Wanted but not invoked:  write('Hello world of Python\n')
+Instead got:             [write('Hello World')]
+]]>		</failure>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>
